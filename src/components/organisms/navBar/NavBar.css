@@ -1,0 +1,76 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  background-color: #5C6BC0; 
+  color: white; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px; 
+}
+
+.filter-icon {
+  margin-left: 5px;
+}
+
+.options-list {
+  list-style: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  width: 100%;
+  top: calc(50px);
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+  max-height: 200px; 
+  overflow-y: auto;
+}
+
+.options-list li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd; 
+}
+
+.options-list li:hover {
+  background-color: #f0f0f0; 
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .search-input {
+    margin-bottom: 10px;
+    width: 100px;
+  }
+  .navbar .input{
+    width: 50%;
+    margin-left: 45px;
+  }
+
+  .navbar .button.reset{
+    display: none;
+    visibility: hidden;
+  }
+
+  .options-list {
+    width: calc(100% - 20px);
+    top: 50px
+  }
+}

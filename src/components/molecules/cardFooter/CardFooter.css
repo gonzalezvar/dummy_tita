@@ -1,0 +1,10 @@
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+  }
+

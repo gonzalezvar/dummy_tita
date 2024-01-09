@@ -1,0 +1,77 @@
+.Login{
+  max-width: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 300px;
+  background-color: #333;
+  border-radius: 10%;
+}
+.loginContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Login h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.466);
+}
+
+.Login span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.466);
+}
+.google-btn {
+  width: 184px;
+  height: 42px;
+  background-color: #009898;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+  .google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  .google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+  .btn-text {
+    float: right;
+    margin: 11px 11px 0 0;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+  }
+  &:hover {
+    box-shadow: 0 0 6px #009898;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);

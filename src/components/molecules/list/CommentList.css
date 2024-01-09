@@ -1,0 +1,33 @@
+.comment-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.comment-avatar {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.comment-content {
+    border-radius: 15px;
+    background: #f0f0f0;
+    padding: 10px 15px;
+    min-width: calc(100% - 100px);
+    max-width: calc(100% - 100px);
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
