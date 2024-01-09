@@ -1,46 +1,37 @@
-# Getting Started with Create React App and Redux
+# dummy_tita
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Descripción
 
-## Available Scripts
+Esta es una prueba de aplicación web desarrollada con React y Redux Toolkit, siguiendo la metodología de diseño atómico.
 
-In the project directory, you can run:
+## Estructura del Proyecto
 
-### `npm start`
+El proyecto se divide en varias carpetas principales:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `src/components`: Contiene los componentes de React, organizados según la metodología de diseño atómico (átomos, moléculas, organismos).
+- `src/store`: Contiene la configuración de Redux Toolkit y los slices de la aplicación.
+- `src/services`: Contiene los servicios utilizados en la aplicación, como la API y la configuración de Firebase.
+- `src/router`: Contiene la configuración del enrutador de la aplicación.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Diseño Atómico
 
-### `npm test`
+El diseño atómico divide los componentes en tres niveles:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Átomos: Son los componentes más básicos como botones, imágenes, entradas de texto, etc.
+- Moléculas: Son grupos de átomos que funcionan juntos como una unidad. Por ejemplo, un formulario de búsqueda podría consistir en un átomo de entrada de texto y un átomo de botón.
+- Organismos: Son grupos de moléculas y/o átomos que forman una sección distinta de una interfaz.
 
-### `npm run build`
+## Redux Toolkit
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Redux Toolkit se utiliza para manejar el estado global de la aplicación. Cada slice en `src/store` representa una pieza del estado global.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalación
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para instalar las dependencias del proyecto, ejecuta:
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Ejecutar
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para ejecutar el proyecto utiliza:
+npm run start
